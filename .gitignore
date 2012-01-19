@@ -1,0 +1,14 @@
+.bundle
+log/*.log
+tmp/
+tmp/**/*
+`.sass-cache/
+*.rbc
+*.sassc
+capybara-*.html
+/public/system/*
+/coverage/
+/spec/tmp/*
+**.orig
+rerun.txt
+pickle-email-*.html

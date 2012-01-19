@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  description: MyText
+  delivered_at: 2012-01-19
+
+two:
+  description: MyText
+  delivered_at: 2012-01-19

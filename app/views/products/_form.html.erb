@@ -1,0 +1,33 @@
+<%= form_for product do |f|%>
+  <% if product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(product.errors.count, "error") %> found. Can not save product. Please correct</h2>
+      <ul>
+        <% product.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>  
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <p>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  </p>
+  <p>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  </p>
+  <p>
+  <%= f.label :cost %>
+  <%= f.text_field :cost %>
+  </p>
+  <p>
+  <%= f.label :stock %>
+  <%= f.text_field :stock %>
+  </p>
+  <p>
+  <%= f.submit %>
+  </p>
+<% end %>
+
+<p><%= link_to 'Cancel', products_path %></p>
